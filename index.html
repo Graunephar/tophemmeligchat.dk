@@ -1,1 +1,43 @@
-tis igen
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+	<script src="iframeResizer.min.js"> </script>
+
+</head>
+<body style="background-color: black;">
+
+<style>
+
+  iframe {
+  	width: calc(100vw - 4px);
+  	height: calc(100vh - 4px);
+  }
+ 
+html, body, div 
+{
+ margin: 0px; 
+ padding: 0px; 
+ height: 100%; 
+ border: none;
+}
+
+</style>
+<iframe id="chatIframe" src="https://20gruppeappdata.graunephar.lol/chat" scrolling="no"></iframe>
+
+
+<script>
+	$( document ).ready(function() {
+
+  iFrameResize({ log: true, maxHeight: '2000'}, '#chatIframe')
+
+
+	});
+</script>
+</body>
+</html>
+
